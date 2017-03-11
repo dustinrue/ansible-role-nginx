@@ -1,0 +1,11 @@
+- name: Install web services
+  apt: name={{ item }} state=installed update_cache=yes
+  with_items:
+    - nginx
+    - php7.0-fpm
+    - php-xml
+    - php-mysql
+    - php-curl
+    - git
+  notify: restart nginx
+
