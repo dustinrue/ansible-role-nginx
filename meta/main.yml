@@ -3,7 +3,7 @@ galaxy_info:
   author: Dustin Rue
   description: Simple Nginx Installer.
   license: MIT
-  min_ansible_version: 0.1
+  min_ansible_version: 0.2
   platforms:
   - name: Ubuntu
     versions:
@@ -12,3 +12,5 @@ galaxy_info:
     - installer
     - web
     - nginx
+dependencies:
+  - dustinrue.xenial-bootstrap
